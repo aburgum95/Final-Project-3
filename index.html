@@ -1,450 +1,526 @@
-<div class="app-container">
-    <div class="app-header">
-      <div class="app-header-left">
-        <span class="app-icon"></span>
-        <p class="app-name">Portfolio</p>
-        <div class="search-wrapper">
-          <input class="search-input" type="text" placeholder="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">
-            <defs></defs>
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="M21 21l-4.35-4.35"></path>
-          </svg>
-        </div>
-      </div>
-      <div class="app-header-right">
-        <button class="mode-switch" title="Switch Theme">
-          <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
-            <defs></defs>
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-          </svg>
-        </button>
-        <button class="add-btn" title="Add New Project">
-          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <line x1="5" y1="12" x2="19" y2="12" /></svg>
-        </button>
-        <button class="notification-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
-            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-            <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
-        </button>
-        <button class="profile-btn">
-          <img src="https://assets.codepen.io/3306515/IMG_2025.jpg" />
-          <span>Aybüke C.</span>
-        </button>
-      </div>
-      <button class="messages-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
-          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
-      </button>
-    </div>
-    <div class="app-content">
-      <div class="app-sidebar">
-        <a href="" class="app-sidebar-link active">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-            <polyline points="9 22 9 12 15 12 15 22" /></svg>
-        </a>
-        <a href="" class="app-sidebar-link">
-          <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-pie-chart" viewBox="0 0 24 24">
-            <defs />
-            <path d="M21.21 15.89A10 10 0 118 2.83M22 12A10 10 0 0012 2v10z" />
-          </svg>
-        </a>
-        <a href="" class="app-sidebar-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-            <line x1="16" y1="2" x2="16" y2="6" />
-            <line x1="8" y1="2" x2="8" y2="6" />
-            <line x1="3" y1="10" x2="21" y2="10" /></svg>
-        </a>
-        <a href="" class="app-sidebar-link">
-          <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-settings" viewBox="0 0 24 24">
-            <defs />
-            <circle cx="12" cy="12" r="3" />
-            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
-          </svg>
-        </a>
-      </div>
-      <div class="projects-section">
-        <div class="projects-section-header">
-          <p>Projects</p>
-          <p class="time">December, 12</p>
-        </div>
-        <div class="projects-section-line">
-          <div class="projects-status">
-            <div class="item-status">
-              <span class="status-number">45</span>
-              <span class="status-type">In Progress</span>
-            </div>
-            <div class="item-status">
-              <span class="status-number">24</span>
-              <span class="status-type">Upcoming</span>
-            </div>
-            <div class="item-status">
-              <span class="status-number">62</span>
-              <span class="status-type">Total Projects</span>
-            </div>
-          </div>
-          <div class="view-actions">
-            <button class="view-btn list-view" title="List View">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
-                <line x1="8" y1="6" x2="21" y2="6" />
-                <line x1="8" y1="12" x2="21" y2="12" />
-                <line x1="8" y1="18" x2="21" y2="18" />
-                <line x1="3" y1="6" x2="3.01" y2="6" />
-                <line x1="3" y1="12" x2="3.01" y2="12" />
-                <line x1="3" y1="18" x2="3.01" y2="18" /></svg>
-            </button>
-            <button class="view-btn grid-view active" title="Grid View">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
-                <rect x="3" y="3" width="7" height="7" />
-                <rect x="14" y="3" width="7" height="7" />
-                <rect x="14" y="14" width="7" height="7" />
-                <rect x="3" y="14" width="7" height="7" /></svg>
-            </button>
-          </div>
-        </div>
-        <div class="project-boxes jsGridView">
-          <div class="project-box-wrapper">
-            <div class="project-box" style="background-color: #fee4cb;">
-              <div class="project-box-header">
-                <span>December 10, 2020</span>
-                <div class="more-wrapper">
-                  <button class="project-btn-more">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                      <circle cx="12" cy="12" r="1" />
-                      <circle cx="12" cy="5" r="1" />
-                      <circle cx="12" cy="19" r="1" /></svg>
-                  </button>
-            </div>
-          </div>
-          <div class="project-box-content-header">
-            <p class="box-content-header">Web Designing</p>
-            <p class="box-content-subheader">Prototyping</p>
-          </div>
-          <div class="box-progress-wrapper">
-            <p class="box-progress-header">Progress</p>
-            <div class="box-progress-bar">
-              <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
-            </div>
-            <p class="box-progress-percentage">60%</p>
-          </div>
-          <div class="project-box-footer">
-            <div class="participants">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
-              <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
-              <button class="add-participant" style="color: #ff942e;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </button>
-            </div>
-            <div class="days-left" style="color: #ff942e;">
-              2 Days Left
-            </div>
+<!DOCTYPE html> 
+<html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+  </head>
+
+<body>
+  <header class="navigation">
+    <div class="logo">
+      <img src="images/mv-marcus-vonier-header-logo.png" alt="Marcus Vonier's Logo">
+    </div> 
+    <nav class ="inline-block"> 
+      <ul>
+        <div class="inline-block">PORTFOLIO</div>
+        <div class="inline-block">SKILLS</div>
+        <div class="inline-block">ABOUT</div>
+        <div class="inline-block">CONTACT</div>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="container text-center">
+        <div class="hero-heading text-hero">Angel Flight Soars</div>
+        <div class="hero-subheading">Non-Profit Website Redesign UX/UI Case Study
+            <div> 3/21/22 - 4/09/22</div>
+   </section>
+ <!-- ====== START Project Overview -->
+ <section class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+    <div class="container">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4">
+          <div class="mb-12 max-w-[964px] lg:mb-20">
+            <span class="mb-2 block text-lg font-semibold text-primary">
+              High Level
+            </span>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
+            >
+              Project Overview
+            </h2>
+            <p
+              class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
+            >
+            Angel Flight Soars, a non-profit organization, had a website that needed improvement of their user experience. My team discovered key issues and developed solutions through UI components and structuring. The result was a website redesign that is user-friendly.
+            </p>
           </div>
         </div>
       </div>
-      <div class="project-box-wrapper">
-        <div class="project-box" style="background-color: #e9e7fd;">
-          <div class="project-box-header">
-            <span>December 10, 2020</span>
-            <div class="more-wrapper">
-              <button class="project-btn-more">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                  <circle cx="12" cy="12" r="1" />
-                  <circle cx="12" cy="5" r="1" />
-                  <circle cx="12" cy="19" r="1" /></svg>
-              </button>
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".1s">
+            <div
+              class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+            >
+              <span
+                class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+              ></span>
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 52 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M45.7205 17.7931H43.5961C43.3892 17.1207 43.0789 16.5 42.8202 15.8793L44.3202 14.3793C45.6651 13.0345 45.6651 10.863 44.3202 9.5699L39.569 4.81035C38.2242 3.46552 36.0518 3.46552 34.7587 4.81035L33.2587 6.31035C32.6435 5.99876 32.0033 5.73923 31.3449 5.53449V3.41749C31.3379 2.51328 30.9756 1.64809 30.3362 1.0087C29.6968 0.36931 28.8316 0.00700501 27.9274 0L21.2069 0C20.3027 0.00700501 19.4375 0.36931 18.7981 1.0087C18.1587 1.64809 17.7964 2.51328 17.7894 3.41749V5.54188C17.117 5.8005 16.4963 6.05912 15.8756 6.31774L14.3793 4.81035C13.7271 4.17988 12.8554 3.82746 11.9483 3.82746C11.0411 3.82746 10.1695 4.17988 9.51725 4.81035L4.80666 9.56898C4.17118 10.2179 3.81794 11.0918 3.8239 12C3.82769 12.9064 4.17951 13.7767 4.80666 14.4311L6.30666 15.9311C5.99506 16.5462 5.73553 17.1864 5.53079 17.8448H3.41749C2.51328 17.8519 1.64809 18.2142 1.0087 18.8536C0.36931 19.4929 0.00700501 20.3581 0 21.2623L0 27.9311C0.00700501 28.8353 0.36931 29.7005 1.0087 30.3399C1.64809 30.9792 2.51328 31.3416 3.41749 31.3486H5.54188C5.8005 32.021 6.05912 32.6417 6.31774 33.2624L4.81035 34.7587C4.17471 35.4075 3.82143 36.2814 3.82759 37.1897C3.83062 38.0973 4.18248 38.969 4.81035 39.6244L9.52095 44.3831C10.8658 45.7279 13.0382 45.7279 14.3313 44.3831L15.8313 42.8831C16.4465 43.1947 17.0866 43.4542 17.7451 43.6589V45.7833C17.7521 46.6875 18.1144 47.5527 18.7538 48.1921C19.3932 48.8315 20.2584 49.1938 21.1626 49.2008H27.835C28.7392 49.1938 29.6044 48.8315 30.2438 48.1921C30.8832 47.5527 31.2455 46.6875 31.2525 45.7833V43.6589C31.9249 43.4003 32.5456 43.1417 33.1663 42.8831L34.6663 44.3831C36.0102 45.7279 38.1826 45.7279 39.4757 44.3831L44.1863 39.6725C44.8597 39.0518 45.17 38.1725 45.17 37.2414C45.1659 36.3349 44.8137 35.4647 44.1863 34.8104L42.6725 33.3104C42.9841 32.6954 43.2434 32.0552 43.4474 31.3966H45.5718C46.476 31.3896 47.3412 31.0273 47.9806 30.3879C48.62 29.7485 48.9823 28.8833 48.9893 27.9791V21.2069C49.1445 19.2931 47.5927 17.7894 45.7307 17.7894L45.7205 17.7931ZM45.3584 27.569H42.2106C41.7973 27.5702 41.3958 27.7077 41.0686 27.9602C40.7413 28.2127 40.5064 28.566 40.4003 28.9656C40.0544 30.2716 39.5324 31.5245 38.8486 32.6897C38.6427 33.0503 38.5615 33.4688 38.6176 33.8803C38.6737 34.2918 38.864 34.6732 39.1589 34.9656L41.3794 37.1897L37.1371 41.4311L34.9138 39.2069C34.2931 38.5872 33.4138 38.4828 32.638 38.8966C31.4715 39.5809 30.2174 40.1032 28.9101 40.4492C28.5104 40.555 28.1567 40.7898 27.904 41.1171C27.6513 41.4445 27.5137 41.8461 27.5127 42.2596V45.4148H21.569V42.2587C21.5678 41.8453 21.4303 41.4439 21.1778 41.1166C20.9253 40.7893 20.572 40.5544 20.1724 40.4483C18.8664 40.1025 17.6135 39.5804 16.4483 38.8966C16.0877 38.6907 15.6692 38.6095 15.2577 38.6656C14.8462 38.7217 14.4648 38.912 14.1724 39.2069L11.9483 41.4302L7.70691 37.1888L9.93105 34.9646C10.5508 34.3449 10.6543 33.4656 10.2405 32.6888C9.55702 31.5234 9.03501 30.2705 8.68874 28.9646C8.5828 28.565 8.34795 28.2116 8.02063 27.9591C7.6933 27.7065 7.2918 27.5691 6.87839 27.5681H3.77587V21.5644H6.92735C7.34071 21.5632 7.74214 21.4257 8.06943 21.1732C8.39673 20.9207 8.63161 20.5673 8.73769 20.1678C9.09303 18.865 9.61456 17.6133 10.2894 16.4437C10.4953 16.083 10.5765 15.6646 10.5204 15.2531C10.4643 14.8416 10.274 14.4601 9.97908 14.1678L7.75863 11.9483L12.0009 7.70691L14.2242 9.93105C14.8448 10.5508 15.7242 10.6552 16.5 10.2405C17.6667 9.55688 18.9207 9.03487 20.2279 8.68874C20.6276 8.58297 20.9813 8.3482 21.234 8.02086C21.4867 7.69352 21.6242 7.29192 21.6253 6.87839V3.77587H27.629V6.92735C27.6302 7.34071 27.7677 7.74214 28.0202 8.06943C28.2727 8.39673 28.6261 8.63161 29.0256 8.73769C30.3316 9.08356 31.5845 9.6056 32.7497 10.2894C33.1104 10.4953 33.5289 10.5765 33.9403 10.5204C34.3518 10.4643 34.7333 10.274 35.0256 9.97908L37.2414 7.75863L41.4828 12.0009L39.255 14.2242C38.6343 14.8448 38.5308 15.7242 38.9446 16.5C39.6299 17.6663 40.1532 18.9204 40.5 20.2279C40.606 20.6277 40.8409 20.9814 41.1684 21.2341C41.4959 21.4868 41.8977 21.6243 42.3113 21.6253H45.4665V27.5727L45.3584 27.569Z" fill="white"/>
+<path d="M24.6206 13.3448C19.9654 13.3448 17.793 16.7069 17.3792 19.6035C17.354 19.7881 17.3686 19.9759 17.4222 20.1544C17.4757 20.3328 17.5669 20.4977 17.6895 20.638C17.8092 20.7826 17.9593 20.899 18.1292 20.9788C18.2991 21.0587 18.4846 21.1 18.6723 21.0998H20.3275C20.6355 21.0968 20.933 20.9868 21.1689 20.7887C21.4048 20.5905 21.5644 20.3165 21.6206 20.0136C21.8275 18.9274 22.4999 17.5825 24.6686 17.5825C26.3247 17.5825 27.0488 18.4618 27.3065 18.9791C27.6686 19.755 27.6169 20.5825 27.1514 21.255C26.6341 21.9274 26.1686 22.2377 25.6514 22.6515C24.2548 23.6343 23.0651 24.7205 22.8065 27.6688C22.7871 27.8495 22.8097 28.0322 22.8727 28.2027C22.9357 28.3732 23.0373 28.5268 23.1695 28.6515C23.289 28.7814 23.4339 28.8854 23.5951 28.9572C23.7563 29.029 23.9305 29.0671 24.107 29.069H25.7105C26.0362 29.07 26.3504 28.9481 26.5901 28.7275C26.8299 28.507 26.9775 28.2041 27.0036 27.8793C27.107 26.7931 27.3139 26.638 28.0381 26.1244C28.7105 25.6626 29.6415 24.9856 30.5208 23.7968C31.9174 21.883 32.1243 19.2968 31.0381 17.1244C29.8484 14.7442 27.4691 13.3476 24.6243 13.3476L24.6206 13.3448Z" fill="white"/>
+<path d="M27.4137 33.2587C27.4137 33.7599 27.2651 34.25 26.9866 34.6668C26.7081 35.0835 26.3122 35.4084 25.8491 35.6002C25.386 35.7921 24.8764 35.8422 24.3848 35.7445C23.8931 35.6467 23.4415 35.4053 23.0871 35.0508C22.7326 34.6964 22.4912 34.2448 22.3934 33.7531C22.2956 33.2615 22.3458 32.7519 22.5377 32.2888C22.7295 31.8256 23.0543 31.4298 23.4711 31.1513C23.8879 30.8728 24.3779 30.7242 24.8792 30.7242C25.5514 30.7242 26.1961 30.9912 26.6714 31.4665C27.1467 31.9418 27.4137 32.5865 27.4137 33.2587"
+                  fill="white"
+                />
+              </svg>
             </div>
-          </div>
-          <div class="project-box-content-header">
-            <p class="box-content-header">Testing</p>
-            <p class="box-content-subheader">Prototyping</p>
-          </div>
-          <div class="box-progress-wrapper">
-            <p class="box-progress-header">Progress</p>
-            <div class="box-progress-bar">
-              <span class="box-progress" style="width: 50%; background-color: #4f3ff0"></span>
-            </div>
-            <p class="box-progress-percentage">50%</p>
-          </div>
-          <div class="project-box-footer">
-            <div class="participants">
-              <img src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80" alt="participant">
-              <img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80" alt="participant">
-              <button class="add-participant" style="color: #4f3ff0;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </button>
-            </div>
-            <div class="days-left" style="color: #4f3ff0;">
-              2 Days Left
-            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark">
+              The Problem
+            </h4>
+            <p class="mb-8 text-body-color lg:mb-11">
+              The current UI Design is outdated, leading users to be confused and turned away from utilizing Angel Flight Soars.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="project-box-wrapper">
-        <div class="project-box">
-          <div class="project-box-header">
-            <span>December 10, 2020</span>
-            <div class="more-wrapper">
-              <button class="project-btn-more">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                  <circle cx="12" cy="12" r="1" />
-                  <circle cx="12" cy="5" r="1" />
-                  <circle cx="12" cy="19" r="1" /></svg>
-              </button>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div
+            class="wow fadeInUp group mb-12 bg-white"
+            data-wow-delay=".15s"
+          >
+            <div
+              class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+            >
+              <span
+                class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+              ></span>
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 52 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M49.8062 23.3187L43.875 17.3875C43.3063 16.8187 42.4125 16.8187 41.8438 17.3875C41.275 17.9562 41.275 18.85 41.8438 19.4187L46.9625 24.6187H27.4625V4.87498L32.5812 10.075C33.15 10.6437 34.0437 10.6437 34.6125 10.075C35.1812 9.50623 35.1812 8.61248 34.6125 8.04373L28.6812 2.11248C27.95 1.38123 26.975 0.974976 26 0.974976C24.9438 0.974976 24.05 1.38123 23.3188 2.11248L17.3875 8.04373C16.8187 8.61248 16.8187 9.50623 17.3875 10.075C17.6312 10.3187 18.0375 10.4812 18.3625 10.4812C18.6875 10.4812 19.0937 10.3187 19.3375 10.075L24.6187 4.87498V24.5375H4.95625L10.075 19.3375C10.6437 18.7687 10.6437 17.875 10.075 17.3062C9.50625 16.7375 8.6125 16.7375 8.04375 17.3062L2.1125 23.2375C0.65 24.7 0.65 27.1375 2.1125 28.6L8.04375 34.5312C8.2875 34.775 8.69375 34.9375 9.01875 34.9375C9.34375 34.9375 9.75 34.775 9.99375 34.5312C10.5625 33.9625 10.5625 33.0687 9.99375 32.5L4.79375 27.3H24.4563V47.125L19.2563 41.925C18.6875 41.3562 17.7938 41.3562 17.225 41.925C16.6563 42.4937 16.6563 43.3875 17.225 43.9562L23.1562 49.8875C23.8875 50.6187 24.8625 51.025 25.8375 51.025C26.8937 51.025 27.7875 50.6187 28.5187 49.8875L34.45 43.9562C35.0188 43.3875 35.0188 42.4937 34.45 41.925C33.8813 41.3562 32.9875 41.3562 32.4188 41.925L27.4625 47.125V27.3812H47.0438L41.8438 32.5812C41.275 33.15 41.275 34.0437 41.8438 34.6125C42.0875 34.8562 42.4938 35.0187 42.8188 35.0187C43.1438 35.0187 43.55 34.8562 43.7938 34.6125L49.725 28.6812C51.2688 27.2187 51.2687 24.7812 49.8062 23.3187Z"
+                  fill="white"
+                />
+              </svg>
             </div>
-          </div>
-          <div class="project-box-content-header">
-            <p class="box-content-header">Svg Animations</p>
-            <p class="box-content-subheader">Prototyping</p>
-          </div>
-          <div class="box-progress-wrapper">
-            <p class="box-progress-header">Progress</p>
-            <div class="box-progress-bar">
-              <span class="box-progress" style="width: 80%; background-color: #096c86"></span>
-            </div>
-            <p class="box-progress-percentage">80%</p>
-          </div>
-          <div class="project-box-footer">
-            <div class="participants">
-              <img src="https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
-              <img src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80" alt="participant">
-              <button class="add-participant" style="color: #096c86;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </button>
-            </div>
-            <div class="days-left" style="color: #096c86;">
-              2 Days Left
-            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark">
+              Solution
+            </h4>
+            <p class="mb-8 text-body-color lg:mb-11">
+              Apply UI components, restructure the menu navigation, and redesign the website to make it more user-friendly.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="project-box-wrapper">
-        <div class="project-box" style="background-color: #ffd3e2;">
-          <div class="project-box-header">
-            <span>December 10, 2020</span>
-            <div class="more-wrapper">
-              <button class="project-btn-more">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                  <circle cx="12" cy="12" r="1" />
-                  <circle cx="12" cy="5" r="1" />
-                  <circle cx="12" cy="19" r="1" /></svg>
-              </button>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".2s">
+            <div
+              class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+            >
+              <span
+                class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+              ></span>
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.7734 14.3281H3.82813C2.07813 14.3281 0.65625 12.9062 0.65625 11.1562V4.21094C0.65625 2.46094 2.07813 1.03906 3.82813 1.03906H10.7734C12.5234 1.03906 13.9453 2.46094 13.9453 4.21094V11.1562C13.9453 12.9062 12.5234 14.3281 10.7734 14.3281ZM3.82813 2.95312C3.17188 2.95312 2.57031 3.5 2.57031 4.21094V11.1562C2.57031 11.8125 3.11719 12.4141 3.82813 12.4141H10.7734C11.4297 12.4141 12.0313 11.8672 12.0313 11.1562V4.21094C12.0313 3.55469 11.4844 2.95312 10.7734 2.95312H3.82813Z"
+                  fill="white"
+                />
+                <path
+                  d="M31.1719 14.3281H24.2266C22.4766 14.3281 21.0547 12.9062 21.0547 11.1562V4.21094C21.0547 2.46094 22.4766 1.03906 24.2266 1.03906H31.1719C32.9219 1.03906 34.3438 2.46094 34.3438 4.21094V11.1562C34.3438 12.9062 32.9219 14.3281 31.1719 14.3281ZM24.2266 2.95312C23.5703 2.95312 22.9688 3.5 22.9688 4.21094V11.1562C22.9688 11.8125 23.5156 12.4141 24.2266 12.4141H31.1719C31.8281 12.4141 32.4297 11.8672 32.4297 11.1562V4.21094C32.4297 3.55469 31.8828 2.95312 31.1719 2.95312H24.2266Z"
+                  fill="white"
+                />
+                <path
+                  d="M10.7734 33.9609H3.82813C2.07813 33.9609 0.65625 32.5391 0.65625 30.7891V23.8438C0.65625 22.0938 2.07813 20.6719 3.82813 20.6719H10.7734C12.5234 20.6719 13.9453 22.0938 13.9453 23.8438V30.7891C13.9453 32.5391 12.5234 33.9609 10.7734 33.9609ZM3.82813 22.5859C3.17188 22.5859 2.57031 23.1328 2.57031 23.8438V30.7891C2.57031 31.4453 3.11719 32.0469 3.82813 32.0469H10.7734C11.4297 32.0469 12.0313 31.5 12.0313 30.7891V23.8438C12.0313 23.1875 11.4844 22.5859 10.7734 22.5859H3.82813Z"
+                  fill="white"
+                />
+                <path
+                  d="M31.1719 33.9609H24.2266C22.4766 33.9609 21.0547 32.5391 21.0547 30.7891V23.8438C21.0547 22.0938 22.4766 20.6719 24.2266 20.6719H31.1719C32.9219 20.6719 34.3438 22.0938 34.3438 23.8438V30.7891C34.3438 32.5391 32.9219 33.9609 31.1719 33.9609ZM24.2266 22.5859C23.5703 22.5859 22.9688 23.1328 22.9688 23.8438V30.7891C22.9688 31.4453 23.5156 32.0469 24.2266 32.0469H31.1719C31.8281 32.0469 32.4297 31.5 32.4297 30.7891V23.8438C32.4297 23.1875 31.8828 22.5859 31.1719 22.5859H24.2266Z"
+                  fill="white"
+                />
+              </svg>
             </div>
-          </div>
-          <div class="project-box-content-header">
-            <p class="box-content-header">UI Development</p>
-            <p class="box-content-subheader">Prototyping</p>
-          </div>
-          <div class="box-progress-wrapper">
-            <p class="box-progress-header">Progress</p>
-            <div class="box-progress-bar">
-              <span class="box-progress" style="width: 20%; background-color: #df3670"></span>
-            </div>
-            <p class="box-progress-percentage">20%</p>
-          </div>
-          <div class="project-box-footer">
-            <div class="participants">
-              <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
-              <img src="https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
-              <button class="add-participant" style="color: #df3670;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </button>
-            </div>
-            <div class="days-left" style="color: #df3670;">
-              2 Days Left
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-box-wrapper">
-        <div class="project-box" style="background-color: #c8f7dc;">
-          <div class="project-box-header">
-            <span>December 10, 2020</span>
-            <div class="more-wrapper">
-              <button class="project-btn-more">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                  <circle cx="12" cy="12" r="1" />
-                  <circle cx="12" cy="5" r="1" />
-                  <circle cx="12" cy="19" r="1" /></svg>
-              </button>
-            </div>
-          </div>
-          <div class="project-box-content-header">
-            <p class="box-content-header">Data Analysis</p>
-            <p class="box-content-subheader">Prototyping</p>
-          </div>
-          <div class="box-progress-wrapper">
-            <p class="box-progress-header">Progress</p>
-            <div class="box-progress-bar">
-              <span class="box-progress" style="width: 60%; background-color: #34c471"></span>
-            </div>
-            <p class="box-progress-percentage">60%</p>
-          </div>
-          <div class="project-box-footer">
-            <div class="participants">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
-              <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
-              <button class="add-participant" style="color: #34c471;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </button>
-            </div>
-            <div class="days-left" style="color: #34c471;">
-              2 Days Left
-            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark">
+              My Role
+            </h4>
+            <p class="mb-8 text-body-color lg:mb-11">
+              UX Researcher and UI Designer
+            </p>
           </div>
         </div>
-      </div>
-      <div class="project-box-wrapper">
-        <div class="project-box" style="background-color: #d5deff;">
-          <div class="project-box-header">
-            <span>December 10, 2020</span>
-            <div class="more-wrapper">
-              <button class="project-btn-more">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                  <circle cx="12" cy="12" r="1" />
-                  <circle cx="12" cy="5" r="1" />
-                  <circle cx="12" cy="19" r="1" /></svg>
-              </button>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div
+            class="wow fadeInUp group mb-12 bg-white"
+            data-wow-delay=".25s"
+          >
+            <div
+              class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+            >
+              <span
+                class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+              ></span>
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29.5312 21.6562L28.6563 21.1641L29.6953 20.5625C30.7344 19.9062 31.3359 18.8125 31.2812 17.6094C31.2266 16.4063 30.625 15.3125 29.5312 14.7109L27.8906 13.7813L29.6406 12.6875C30.6797 12.0313 31.2812 10.9375 31.2266 9.73438C31.1719 8.53125 30.5703 7.4375 29.4766 6.83594L19.25 1.09375C18.2109 0.492187 16.9531 0.546875 15.9141 1.09375L5.41406 7.21875C4.375 7.82031 3.71875 8.91406 3.71875 10.1172C3.71875 11.3203 4.375 12.4141 5.41406 13.0156L7.10938 14L5.41406 14.9844C4.375 15.5859 3.71875 16.6797 3.71875 17.8828C3.71875 19.0859 4.32031 20.1797 5.41406 20.7812L6.39844 21.3281L5.46875 21.875C4.42969 22.4766 3.77344 23.5703 3.77344 24.7734C3.77344 25.9766 4.375 27.0703 5.46875 27.6719L15.9141 33.6875C16.4609 34.0156 17.0078 34.125 17.6094 34.125C18.2109 34.125 18.8125 33.9609 19.3594 33.6328L29.6953 27.2891C30.7344 26.6328 31.3359 25.5391 31.2812 24.3359C31.2266 23.2969 30.625 22.2031 29.5312 21.6562ZM5.63281 10.1172C5.63281 9.57031 5.90625 9.13281 6.34375 8.85938L16.8438 2.78906C17.0625 2.67969 17.3359 2.57031 17.5547 2.57031C17.7734 2.57031 18.0469 2.625 18.2656 2.73437L28.5469 8.47656C28.9844 8.75 29.2578 9.1875 29.3125 9.73438C29.3125 10.2812 29.0391 10.7188 28.6016 10.9922L18.3203 17.3906C17.8828 17.6641 17.2812 17.6641 16.8438 17.3906L6.39844 11.375C5.90625 11.1562 5.63281 10.6641 5.63281 10.1172ZM5.63281 17.9375C5.63281 17.3906 5.90625 16.9531 6.34375 16.6797L9.02344 15.1484L15.8594 19.0859C16.4062 19.4141 16.9531 19.5234 17.5547 19.5234C18.1562 19.5234 18.7578 19.3594 19.3047 19.0312L26.0312 14.875L28.6016 16.2969C29.0391 16.5703 29.3125 17.0078 29.3672 17.5547C29.3672 18.1016 29.0938 18.5391 28.6563 18.8125L18.3203 25.2656C17.8828 25.5391 17.2812 25.5391 16.8438 25.2656L6.39844 19.25C5.90625 18.9766 5.63281 18.4844 5.63281 17.9375ZM28.6563 25.8125L18.3203 32.2109C17.8828 32.4844 17.2812 32.4844 16.8438 32.2109L6.39844 26.1953C5.96094 25.9219 5.6875 25.4844 5.6875 24.9375C5.6875 24.3906 5.96094 23.9531 6.39844 23.6797L8.3125 22.5859L15.8594 26.9609C16.4062 27.2891 16.9531 27.3984 17.5547 27.3984C18.1562 27.3984 18.7578 27.2344 19.3047 26.9062L26.7969 22.2578L28.6563 23.2969C29.0938 23.5703 29.3672 24.0078 29.4219 24.5547C29.3672 25.0469 29.0938 25.5391 28.6563 25.8125Z"
+                  fill="white"
+                />
+              </svg>
             </div>
-          </div>
-          <div class="project-box-content-header">
-            <p class="box-content-header">Web Designing</p>
-            <p class="box-content-subheader">Prototyping</p>
-          </div>
-          <div class="box-progress-wrapper">
-            <p class="box-progress-header">Progress</p>
-            <div class="box-progress-bar">
-              <span class="box-progress" style="width: 40%; background-color: #4067f9"></span>
-            </div>
-            <p class="box-progress-percentage">40%</p>
-          </div>
-          <div class="project-box-footer">
-            <div class="participants">
-              <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
-              <img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80" alt="participant">
-              <button class="add-participant" style="color: #4067f9;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </button>
-            </div>
-            <div class="days-left" style="color: #4067f9;">
-              2 Days Left
-            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark">
+              Design Tools
+            </h4>
+            <p class="mb-8 text-body-color lg:mb-11">
+              Adobe XD, Invision, Adobe Color, Miro, Trello and Excel
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="messages-section">
-    <button class="messages-close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
-        <circle cx="12" cy="12" r="10" />
-        <line x1="15" y1="9" x2="9" y2="15" />
-        <line x1="9" y1="9" x2="15" y2="15" /></svg>
-    </button>
-    <div class="projects-section-header">
-      <p>Client Messages</p>
+  </section>
+  <!-- ====== END Project Overview Section -->
+  
+  <!-- ==== START The Challenge Section ==== --->
+  <div class="layout"></div>
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">The Challenge</h2>
+      <p>
+        During the initial meeting with Angel Flight Soars, we gained insight on their goals for both their company as a whole and their website. We discovered some major pain points on the website that were causing their goals with their company to not align with their goals on their website. We discovered there were some major pain points on their website that created difficult navigation.</p> 
+        <p> We recognized this website needed to be user-friendly but only had 2 weeks to achieve this so we quicly set out to develop solutions through UI components, restructuring navigation, and redesigning the website. After implementing our solutions, we conducted 5 usability tests. 
+      </p>
     </div>
-    <div class="messages">
-      <div class="message-box">
-        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image">
-        <div class="message-content">
-          <div class="message-header">
-            <div class="name">Stephanie</div>
-            <div class="star-checkbox">
-              <input type="checkbox" id="star-1">
-              <label for="star-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
-              </label>
-            </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/before-and-after-image.png" alt="">
+    </div>
+  </div>
+  <!--Case Study Nav Section-->
+  <section class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+    <div class="container">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4">
+          <div class="mb-12 max-w-[964px] lg:mb-20 text-center">
+            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]">
+              Case Study Navigation </h2>
           </div>
-          <p class="message-line">
-            I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.
-          </p>
-          <p class="message-line time">
-            Dec, 12
-          </p>
         </div>
       </div>
-      <div class="message-box">
-        <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image">
-        <div class="message-content">
-          <div class="message-header">
-            <div class="name">Mark</div>
-            <div class="star-checkbox">
-              <input type="checkbox" id="star-2">
-              <label for="star-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
-              </label>
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".1s">
+            <div>
+              <img src="images/1-discovery.png">
             </div>
           </div>
-          <p class="message-line">
-            Hey, can tell me about progress of project? I'm waiting for your response.
-          </p>
-          <p class="message-line time">
-            Dec, 12
-          </p>
         </div>
-      </div>
-      <div class="message-box">
-        <img src="https://images.unsplash.com/photo-1543965170-4c01a586684e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image">
-        <div class="message-content">
-          <div class="message-header">
-            <div class="name">David</div>
-            <div class="star-checkbox">
-              <input type="checkbox" id="star-3">
-              <label for="star-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
-              </label>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".1s">
+            <div>
+              <img src="images/2-identify.png">
             </div>
           </div>
-          <p class="message-line">
-            Awesome! 🤩 I like it. We can schedule a meeting for the next one.
-          </p>
-          <p class="message-line time">
-            Dec, 12
-          </p>
         </div>
-      </div>
-      <div class="message-box">
-        <img src="https://images.unsplash.com/photo-1533993192821-2cce3a8267d1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwbW9kZXJufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image">
-        <div class="message-content">
-          <div class="message-header">
-            <div class="name">Jessica</div>
-            <div class="star-checkbox">
-              <input type="checkbox" id="star-4">
-              <label for="star-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
-              </label>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".1s">
+            <div>
+              <img src="images/3-design.png">
             </div>
           </div>
-          <p class="message-line">
-            I am really impressed! Can't wait to see the final result.
-          </p>
-          <p class="message-line time">
-            Dec, 11
-          </p>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".1s">
+            <div>
+              <img src="images/4-verify.png">
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".1s">
+            <div>
+              <img src="images/5-final-thoughts.png">
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
+  </section>
+<!--Descovery Title Section-->
+<section class="page-section bg-grey" id="about">
+  <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+              <h2 class="text-black mt-0">Discovery</h2>
+              <hr class="divider divider-light" />
+              <p class="text-black-75 mb-4">As human-centric designers, we set out to understand our users & stakeholders.</p>
+          </div>
+      </div>
   </div>
+</section>
+
+  <div class="layout"></div>
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">Stakeholder Interview</h2>
+      <p>
+        After some difficulties of gaining a contact, we were able to meet with Stephen Jamieson, the Project Coordinator.
+      </p>
+      <h2 style="width: 400px;">Key Takeaways:</h2>
+      <p style="width: 400px;">
+        <ul>
+          <li>Angel Flight Soar target audiences are patients, pilots and donors</li>
+          <li>They hoped their website was more simplified and easily accessible to patients and pilots. In 3 words: "Professional, easy to navigate, functional</li>
+          <li>Functionalities include patients be able to log into an account, pilots to apply and signup for missions, and donations be received</li>
+          </ul>
+      </p>
+      <a href="https://docs.google.com/spreadsheets/d/1PjNWO1MMjU-sEJulCdVvOfcxiL4TWrQVLoO9FsoUEI4/edit#gid=0"
+      class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg">
+        View The Creative Brief
+      </a>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/stakeholders.png" alt="">
+    </div>
   </div>
+  
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">Usability Analysis</h2>
+      <p>
+        After analyzing the stakeholder interview, I put together an interview script to gain further understanding about the needs of the targeted audience to discover if the organization and their website was meeting this need.</p>
+        <p> We interviewed a variety of people from all walks of life who would have different medical needs; elders, parents, and single young adults. We took the information from the gathered results to create an affinity diagram to recognize the collective answers and issues.</P>
+          <p> From the affinity diagram, we discovered the iggest issues were that the website appears outdated, the qiuck links created confusion, and the site did not provide clear information for patients and pilots.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/affinity-diagram.png" alt="">
+    </div>
   </div>
+  
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">Competitor Analysis and Heuristic Evaluation</h2>
+      <p>
+        We conducted a heuristic evaluation to find the general and obvoius pain points with the website. Through an onboarding competitive analysis, we were able to compare Angel Flight Soars to similar organizations and recognize some methods we could apply to their website but make it even better.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/competitor-analysis-and-heuristic-evaluation.png" alt="">
+    </div>
+  </div>
+
+  <!--Idenitfy Title Section-->
+  <section class="page-section bg-grey" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-black mt-0">Idenitfy</h2>
+                <hr class="divider divider-light" />
+                <p class="text-black-75 mb-4">Through developing user personas, we considered the User Journey our users would take as a first-time visitor to the Angel Flight Soars website.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">User Personas</h2>
+      <p style="width: 400px;">
+        Through our analysis, I was able to develop two user personas based on two key users that visit the Angel Flight Soars website; a certified nurse and patient. However, we recognize there was the need for a pilot persona as well. Unfortunately, time restraints did not allow for this but we still tried to include their path for that key user.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/user-personas.png" alt="">
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">UX Scenario & Storyboard</h2>
+      <p style="width: 400px;">
+        Understanding the user’s experience that lead up to them visiting the site and throughout their journey allowed us to understand their mindset and goals. We were then able to find the best paths to efficiently meet their needs.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/ux-scenario-and-storyboard.png" alt="">
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">User Flow Diagrams</h2>
+      <p style="width: 400px;">
+        We developed two main user flows for our user personas to quickly deliver the information they needed and allow them to easily navigate to the next step. We ultimately provided 4 important steps. The homepage, the About Us to help them understand what Angel Flight Soars achieves, select if they’re on the patient side or a pilot.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/user-flow-diagrams.png" alt="">
+    </div>
+  </div>
+
+    <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">New Information Hierarchy (AKA Sitemap)</h2>
+      <p>
+        We reviewed the current sitemap and found some pain points that could use some improvement. This included pages that didn’t allow the user easily navigate back to the homepage and pages that didn’t have the same quick links. We developed a new hierarchy that was better organized for the user expectation. This included a top navigation and bottom navigation in the header so the user could get to any page they needed regardless of where they were at on the site.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/sitemap.png" alt="">
+    </div>
+  </div>
+
+  <!--Design Title Section-->
+  <section class="page-section bg-grey" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-black mt-0">Design</h2>
+                <hr class="divider divider-light" />
+                <p class="text-black-75 mb-4">After crafting our user persona, considered the User Journey that a frist-time visitor would take, we set out our journey in design.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">Site Style Guide</h2>
+      <p>
+        The goal with the style guide was to create a professional, clean website that honored their color scheme. We included the color, typography, iconography, and controls.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/style-guide.png" alt="">
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">Templated Sections</h2>
+      <p>
+        Since we were limited in time, we produced templated sections for the team to use to rapidly produce a hi-fidelity prototype for a cohesive experience across the website.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/templated-section-designs.png" alt="">
+    </div>
+  </div>
+
+  <div class="layout text-center">
+    <div class="layout__item layout__item--body">
+      <h2 class="text-center">Hi-Fidelity Prototype</h2>
+      <p>
+        Our hi-fidelity prototypes
+      </p>
+      <a href="https://xd.adobe.com/view/ffc25a76-12cc-4518-871e-960738609641-aa91/"
+      class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg">
+      View Our Hi-Fidelity Prototype
+      </a>
+    </div>
+    </div>
+  </div>
+
+
+  <!--Verify Title Section-->
+  <section class="page-section bg-grey" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-black mt-0">Verify</h2>
+                <hr class="divider divider-light" />
+                <p class="text-black-75 mb-4">After designing, we set out to verify our decisions.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="layout"></div>
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">Prototyping & Testing</h2>
+      <p>
+        Our hi-fidelity testing revealed that our users were able to complete the intended user flows with no issues.
+      </p>
+      <h2 style="width: 400px;">Key Takeaways:</h2>
+      <p style="width: 400px;">
+        <ul>
+          <li>Users were able to complete tasks easily</li>
+          <li>Make the elements in the primary navigation and footer more visible</li>
+          <li>Align elements in a grid to provide a cleaner responsive design between mobile and desktop screen sizes</li>
+          </ul>
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/usability-testing 2.png" alt="">
+    </div>
+  </div>  
+
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">Updated Design</h2>
+      <p>
+        We delivered a moder, professional design that features the functionality and accessibility that meets both the organization and user’s needs.
+      </p>
+      <a href="https://xd.adobe.com/view/ffc25a76-12cc-4518-871e-960738609641-aa91/"
+      class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg">
+      View Our Hi-Fidelity Prototype
+      </a>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/xd-prototype.png" alt="">
+    </div>
+  </div>
+  <!--Final Thoughts Title Section-->
+  <section class="page-section bg-grey" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-black mt-0">Final Thoughts</h2>
+                <hr class="divider divider-light" />
+                <p class="text-black-75 mb-4">The final product is professional, clean, and modern. Now we propel Angle Flight Soars' online presence into the future.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <div class="layout"></div>
+  <div class="layout">
+    <div class="layout__item layout__item--body">
+      <h2 style="width: 400px;">Results</h2>
+      <p>
+        Our redesign came at the pefect time, as Angel Flight Soars was preparing to update their online presence. We have sent our design to the organization and patiently wait to see what elements will be included in their final product.</p>
+        <p>
+        Our hope with this redesign is to give medical patients and pilots a sense of empowerment and security when working with such a great organization. We expect more website traffic, with greater user retention rates and delightful experience when researching Angel Flight Soars online, all in the aim of increasing awareness and reaching those in need of their services.
+      </p>
+    </div>
+    <div class="layout__item layout__item--figure">
+      <img src="images/end-results.png" alt="">
+    </div>
+  </div>
+<!-- ==== END The Challenge Section ==== --->
+</body>
+
+
+
+<footer>
+    <ul style="margin-top: 0px;margin-bottom: 0px;">
+      <div class="inline-block">
+        <div class="inline-block">PORTFOLIO</div>
+        <div class="inline-block">SKILLS</div>
+        <div class="inline-block">ABOUT</div>
+        <div class="inline-block">CONTACT</div>
+      </div>
+    </ul>
+  </footer>
+  <script src="js/index.js"></script>
+</html>
